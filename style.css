@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.container {
+  max-width: 1400px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --------header-------- */
+.main-header {
+  background-color: rgb(116, 156, 218);
+  color:#ffffff;
+}
+
+.main-header .container {
+  max-width: 1700px;
+  width: 90%;
+}
+
+.main-header .logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main-header .burger {
+  display: none;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 15px;
+}
+
+.main-header .header-flex a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  display: inline-block;
+  transition: 0.2s ease;
+}
+
+.main-header .header-flex .logo-txt {
+  color: #ffffff;
+}
+
+.main-header .nav-list a:hover {
+  color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+/* --------header over-------- */
+
+/* --------big banner-------- */
+.big-banner {
+  background-image: url(assets/bb-jump.jpeg);
+  background-size: cover;
+  background-position: center;
+  min-height: calc(110vh - 70px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bb-container {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  word-spacing: 4px;
+}
+
+.bb-container span {
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.bb-container span:hover {
+  transform: scale(1.2);
+}
+
+/* --------big banner over-------- */
+
+/* --------about section-------- */
+.about {
+  padding-bottom: 80px;
+}
+
+.about-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -120px;
+}
+
+.about-flex .card {
+  width: calc((100% - 100px) / 3);
+}
+
+.about .card .text {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.about .card .img {
+  background-blend-mode: overlay;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.about .card .left {
+  background: url(assets/private_lesson.jpg) rgba(255, 255, 255, 0);
+  background-size: cover;
+  background-position: center;
+  transition:  0.5s ease;
+}
+
+.about .card .left:hover {
+  background: url(assets/private_lesson.jpg) rgba(255, 255, 255, 0.7);
+  background-size: cover;
+  background-position: center;
+}
+
+.about .card .middle {
+  background: url(assets/group_lesson.jpg) rgba(255, 255, 255, 0);
+  background-size: cover;
+  background-position: center;
+  transition:  0.5s ease;
+}
+
+.about .card .middle:hover {
+  background: url(assets/group_lesson.jpg) rgba(255, 255, 255, 0.7);
+  background-size: cover;
+  background-position: center;
+}
+
+.about .card .right {
+  background: url(assets/trail_ride.jpg)rgba(255, 255, 255, 0);
+  background-size: cover;
+  background-position: center;
+  transition:  0.5s ease;
+}
+
+.about .card .right:hover {
+  background: url(assets/trail_ride.jpg)rgba(255, 255, 255, 0.7);
+  background-size: cover;
+  background-position: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.about .hidden p {
+  margin-bottom: 10px;
+}
+
+.about .hidden a {
+  color: #000000;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.about .hidden a:hover {
+  transform: scale(1.1);
+}
+
+.card .img:hover .hidden {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+/* --------meet section-------- */
+.meet {
+  padding: 80px 0;
+  background-color: rgb(222, 236, 255);
+}
+
+.meet .about-txt {
+  max-width: 900px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.meet p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.meet .container h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.meet-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meet-flex .card {
+  width: calc((100% - 50px) / 6);
+  text-align: center;
+}
+
+.meet .card .img {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.meet .card .one {
+  background-image: url(assets/face_one.jpeg);
+}
+
+.meet .card .two {
+  background-image: url(assets/face_two.jpeg);
+}
+
+.meet .card .three {
+  background-image: url(assets/face_three.jpg);
+}
+
+.meet .card .four {
+  background-image: url(assets/face_four.jpeg);
+}
+
+.meet .card .five {
+  background-image: url(assets/face_five.jpeg);
+}
+
+.meet .card .six {
+  background-image: url(assets/face_six.jpeg);
+}
+/* --------meet section over-------- */
+
+/* --------cta banner-------- */
+.cta {
+  background: url(assets/cta-banner.jpeg) rgba(46, 20, 0, 0.5);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cta h2 {
+  margin-bottom: 15px;
+}
+
+.cta p {
+  margin-bottom: 20px;
+}
+
+.cta .cta-btn {
+  text-decoration: none;
+  background-color: rgb(111, 4, 4);
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 15px;
+  padding: 7px 10px;
+  border: 3px solid rgb(111, 4, 4);
+}
+
+.cta .cta-btn:hover {
+  background-color: rgba(111, 4, 4, 0.6);
+}
+/* --------cta banner over-------- */
+
+/* --------address section-------- */
+.address {
+  padding: 100px 0;
+}
+
+.address-flex {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.address .address-flex .left {
+  width: 30%;
+}
+
+.address .address-flex .right {
+  width: 70%;
+}
+
+.address .left h2 {
+  margin-bottom: 17px;
+}
+
+.address .left p {
+  margin-bottom: 15px;
+}
+
+.address .left a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s ease;
+}
+
+.address .left a:hover {
+  text-decoration: underline;
+}
+
+.address .address-flex .right .right-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address .right .card {
+  width: calc((100% - 60px) / 3);
+}
+
+.address .right .card .img {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.address .right .card .leftc {
+  background-image: url(assets/stable_1.jpeg);
+}
+
+.address .right .card .middle {
+  background-image: url(assets/stable_2.jpeg);
+}
+
+.address .right .card .rightc {
+  background-image: url(assets/stable_3.jpeg);
+}
+/* --------address section over-------- */
+
+/* --------footer section-------- */
+footer {
+  background-color: #8a1c1d;
+  padding: 50px 0;
+}
+
+.footer-flex h3 {
+  color: #ffffff;
+}
+
+.footer-flex p {
+  color: #ffffff;
+  line-height: 23px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 150px;
+}
+
+footer h3 {
+  margin-bottom: 8px;
+}
+
+footer .f-right .foot-txt {
+  margin-bottom: 6px;
+}
+
+footer .f-right .up {
+  margin-bottom: 8px;
+}
+
+footer .footer-flex .hover-add p:hover {
+  text-decoration: underline;
+}
+
+footer .f-right .m-up {
+  margin-top: 20px;
+}
+
+.social-flex {
+  font-size: 20px;
+  color: #ffffff;
+  display: flex;
+  gap: 15px;
+}
+
+.social-flex i:hover {
+  transform: scale(1.3);
+}
+/* --------footer section over-------- */
+
+/* --------media query - desktop first - phone next-------- */
+
+@media only screen and (max-width: 992px) {
+
+    .main-header .logo {
+      font-size: 17px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .main-header .burger {
+        display: block;
+    }
+
+    .big-banner {
+      background-image: url(assets/bb-small.jpeg);
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .bb-container {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .big-banner h2 {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .about {
+      padding-bottom: 50px;
+    }
+
+    .about-flex .card {
+        width: calc((100% - 50px) / 3);
+    }
+
+    .about .card .img {
+        height: 240px;
+    }
+
+    .meet {
+      padding: 50px 0;
+    }
+
+    .meet-flex {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .meet-flex .card {
+        width: calc((100% - 60px) / 3);
+    }
+
+    .address-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .address .address-flex .left {
+        width: 100%;
+    }
+
+    .address .address-flex .right {
+        width: 100%;
+    }
+
+    .card .hidden {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about .card .left {
+        background: url(assets/private_lesson.jpg) rgba(255, 255, 255, 0.7);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .about .card .middle {
+        background: url(assets/group_lesson.jpg) rgba(255, 255, 255, 0.7);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .about .card .right {
+        background: url(assets/trail_ride.jpg)rgba(255, 255, 255, 0.7);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cta {
+        padding: 70px 0;
+    }
+
+    .address {
+      padding: 70px 0;
+    }
+
+    .footer-flex {
+        gap: 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main-header .header-flex .logo-txt {
+      font-size: 15px;
+    }
+
+    .big-banner h2 {
+      font-size: 20px;
+    }
+
+    .about-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .about-flex .card {
+        width: 70%;
+    }
+
+    .meet .container h2 {
+      font-size: 25px;
+    }
+
+    .meet-flex {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .meet-flex .card {
+        width: calc((100% - 20px) / 2);
+    }
+
+    .address .right .card {
+        width: calc((100% - 30px) / 3);
+    }
+
+    .address .right .card .img {
+        height: 200px;
+    }
+
+    .footer-flex {
+        gap: 45px;
+    }
+
+    .cta {
+        padding: 60px 0;
+    }
+
+    .footer-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-flex {
+      justify-content: center;
+    }
+
+    .f-left {
+        text-align: center;
+    }
+
+    .f-middle {
+        text-align: center;
+    }
+
+    .f-right {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .big-banner h2 {
+      font-size: 16px;
+    }
+}
+
+/* line hight */
